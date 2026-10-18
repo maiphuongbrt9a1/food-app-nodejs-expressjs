@@ -21,6 +21,7 @@ app.use(morgan('dev'));
 
 //route
 app.use('/api/v1/test', require('./routes/testRouters'));
+app.use('/api/v1/auth', require('./routes/authRouters'));
 
 app.get('/', (req, res) => {
   return res.status(200).send('<h1>Hello world</h1>');
