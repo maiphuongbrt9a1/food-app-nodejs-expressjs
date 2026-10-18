@@ -33,5 +33,5 @@ const PORT = process.env.PORT || 8080;
 
 //listen
 app.listen(PORT, () => {
-  console.log(`server is running.... on ${PORT}`.bgGreen.white);
+  console.log(`server is running.... on port ${PORT}`.bgGreen.white);
 });

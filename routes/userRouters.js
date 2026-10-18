@@ -18,7 +18,7 @@ router.get('/getAllUser', authMiddleware, getAllUserController);
 router.get('/:id', authMiddleware, getUserByIdController);
 
 // updateProfile
-router.patch('/updateUser', authMiddleware, updateUserProfileController);
+router.patch('/:id', authMiddleware, updateUserProfileController);
 
 // passwordUpdate
 router.post('/updatePassword', authMiddleware, updatePasswordController);
